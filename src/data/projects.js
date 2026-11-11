@@ -20,7 +20,7 @@ export const projectsData = [
             'A modern, responsive portfolio built with Next.js. Showcasing my technical skills, professional experience, and selected projects.',
         technologies: ['Next.js', 'React', 'JavaScript', 'CSS3'],
         image: '/projects/Personal_portfolio.png',
-        liveUrl: 'https://biruk-abera-portfolio-gules.vercel.app',
+        liveUrl: 'https://biruk-abera-portfolio.vercel.app',
         githubUrl: 'https://github.com/Biruk-ete/biruk-abera-portfolio',
         bgClass: 'projects-bg-light',
     },

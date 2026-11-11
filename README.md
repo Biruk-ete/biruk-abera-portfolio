@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built with Next.js to present my
 
 ## Live Demo
 
-**[Visit My Portfolio](biruk-abera-portfolio-gules.vercel.app)**
+**[Visit My Portfolio](biruk-abera-portfolio.vercel.app)**
 
 ## Features
 
