@@ -1,0 +1,505 @@
+/* NOT FOUND PAGE */
+.not-found-page {
+  --primary: #6b91e8;
+  --primary-dark: #4d73ce;
+  --primary-light: #b5d0ff;
+
+  --dark: #202b3c;
+  --text: #ffffff;
+  --muted: #aab5c8;
+
+  --background: #111827;
+  --surface: #202b3c;
+  --border: rgba(255, 255, 255, 0.1);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* BACKGROUND DECORATIONS */
+.not-found-content {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 750px;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.not-found-decoration {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.decoration-one {
+  top: 5%;
+  left: -10%;
+  width: 450px;
+  height: 450px;
+  background: rgba(107, 145, 232, 0.2);
+}
+
+.decoration-two {
+  right: -8%;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  background: rgba(77, 115, 206, 0.16);
+}
+
+/* PAGE LABEL */
+.not-found-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--primary-light);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.not-found-label-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 12px rgba(107, 145, 232, 0.7);
+  flex-shrink: 0;
+}
+
+/* 404 NUMBER */
+.not-found-number {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: clamp(130px, 22vw, 230px);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: -15px;
+}
+
+.not-found-number span {
+  color: var(--primary);
+}
+
+/* HEADING */
+.not-found-content h1 {
+  margin: 25px 0 18px;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.not-found-content h1 span {
+  color: var(--primary-light);
+  font-style: italic;
+}
+
+/* DESCRIPTION */
+.not-found-description {
+  max-width: 440px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* ACTION BUTTONS */
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.not-found-home-button,
+.not-found-project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 15px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.not-found-home-button {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.not-found-home-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(107, 145, 232, 0.25);
+}
+
+.not-found-project-link {
+  border: 1px solid var(--border);
+  color: #ffffff;
+}
+
+.not-found-project-link:hover {
+  border-color: var(--primary);
+  background: rgba(107, 145, 232, 0.12);
+  color: var(--primary-light);
+  transform: translateY(-3px);
+}
+
+/* BOTTOM MESSAGE */
+.not-found-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 65px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+
+.not-found-bottom svg {
+  color: var(--primary);
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .not-found-content {
+    min-height: 700px;
+    padding: 75px 24px;
+  }
+
+  .not-found-number {
+    font-size: clamp(125px, 24vw, 200px);
+    letter-spacing: -12px;
+  }
+
+  .decoration-one {
+    width: 380px;
+    height: 380px;
+  }
+
+  .decoration-two {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .not-found-content {
+    min-height: 650px;
+    padding: 70px 24px;
+  }
+
+  .not-found-number {
+    font-size: clamp(120px, 25vw, 180px);
+    letter-spacing: -10px;
+  }
+
+  .not-found-content h1 {
+    font-size: clamp(36px, 7vw, 48px);
+  }
+
+  .not-found-description {
+    max-width: 390px;
+  }
+
+  .not-found-bottom {
+    margin-top: 50px;
+  }
+
+  .decoration-one {
+    width: 320px;
+    height: 320px;
+  }
+
+  .decoration-two {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 540px) {
+  .not-found-content {
+    min-height: 620px;
+    padding: 65px 20px;
+  }
+
+  .not-found-number {
+    font-size: clamp(110px, 28vw, 150px);
+    letter-spacing: -8px;
+  }
+
+  .not-found-content h1 {
+    font-size: clamp(32px, 8vw, 42px);
+    letter-spacing: -1.5px;
+  }
+
+  .not-found-description {
+    max-width: 340px;
+    font-size: 12px;
+  }
+
+  .not-found-actions {
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .not-found-home-button,
+  .not-found-project-link {
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+
+  .not-found-bottom {
+    margin-top: 45px;
+    font-size: 10px;
+  }
+
+  .decoration-one {
+    width: 260px;
+    height: 260px;
+  }
+
+  .decoration-two {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .not-found-content {
+    min-height: 600px;
+    padding: 60px 20px;
+  }
+
+  .not-found-number {
+    font-size: 125px;
+    letter-spacing: -8px;
+  }
+
+  .not-found-content h1 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  .not-found-description {
+    font-size: 12px;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .not-found-home-button,
+  .not-found-project-link {
+    width: 100%;
+  }
+
+  .not-found-bottom {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .not-found-content {
+    min-height: 560px;
+    padding: 55px 16px;
+  }
+
+  .not-found-label {
+    padding: 8px 13px;
+    font-size: 9px;
+    letter-spacing: 1.6px;
+    gap: 8px;
+  }
+
+  .not-found-label-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .not-found-number {
+    font-size: 105px;
+    letter-spacing: -7px;
+    margin-bottom: 12px;
+  }
+
+  .not-found-content h1 {
+    font-size: 31px;
+    margin: 20px 0 15px;
+  }
+
+  .not-found-description {
+    max-width: 300px;
+    font-size: 11.5px;
+    line-height: 1.85;
+  }
+
+  .not-found-home-button,
+  .not-found-project-link {
+    padding: 12px 18px;
+    font-size: 12px;
+    gap: 9px;
+  }
+
+  .not-found-bottom {
+    margin-top: 38px;
+    font-size: 9.5px;
+    gap: 8px;
+  }
+
+  .not-found-bottom svg {
+    font-size: 14px;
+  }
+
+  .decoration-one {
+    width: 220px;
+    height: 220px;
+  }
+
+  .decoration-two {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media (max-width: 320px) {
+  .not-found-content {
+    min-height: 520px;
+    padding: 50px 14px;
+  }
+
+  .not-found-label {
+    padding: 7px 11px;
+    font-size: 8px;
+    letter-spacing: 1.3px;
+    gap: 7px;
+    margin-bottom: 16px;
+  }
+
+  .not-found-label-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .not-found-number {
+    font-size: 88px;
+    letter-spacing: -6px;
+    margin-bottom: 10px;
+  }
+
+  .not-found-content h1 {
+    font-size: 27px;
+    letter-spacing: -1.2px;
+    margin: 18px 0 13px;
+  }
+
+  .not-found-description {
+    max-width: 270px;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+
+  .not-found-actions {
+    gap: 9px;
+    margin-top: 24px;
+    max-width: 230px;
+  }
+
+  .not-found-home-button,
+  .not-found-project-link {
+    padding: 11px 16px;
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .not-found-bottom {
+    margin-top: 32px;
+    font-size: 9px;
+    gap: 7px;
+    letter-spacing: 0.2px;
+  }
+
+  .not-found-bottom svg {
+    font-size: 13px;
+  }
+
+  .decoration-one {
+    width: 180px;
+    height: 180px;
+  }
+
+  .decoration-two {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* LANDSCAPE PHONE FIX */
+@media (max-width: 768px) and (orientation: landscape) {
+  .not-found-content {
+    min-height: 400px;
+    padding: 50px 20px;
+  }
+
+  .not-found-number {
+    font-size: clamp(90px, 15vw, 130px);
+  }
+
+  .not-found-content h1 {
+    font-size: clamp(28px, 5vw, 38px);
+  }
+
+  .not-found-bottom {
+    margin-top: 35px;
+  }
+
+  .not-found-actions {
+    margin-top: 28px;
+  }
+
+  .decoration-one,
+  .decoration-two {
+    filter: blur(80px);
+  }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  .not-found-home-button,
+  .not-found-project-link {
+    transition: none;
+  }
+}

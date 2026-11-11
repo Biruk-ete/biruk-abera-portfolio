@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Biruk Abera | Personal Portfolio
+
+A modern, responsive personal portfolio website built with Next.js to present my professional background, technical skills, experience, and selected work. Designed with a focus on clean user interfaces, responsive layouts, accessibility, and a consistent user experience across different devices.
+
+## Live Demo
+
+**[Visit My Portfolio](biruk-abera-portfolio-gules.vercel.app)**
+
+## Features
+
+- **Modern User Interface:** Clean layouts, consistent typography, and a visually engaging design.
+- **Responsive Design:** Optimized layouts for desktop, laptop, tablet, and mobile devices.
+- **Home Page:** Professional introduction, profile presentation, and featured projects.
+- **About Page:** Personal background, technical skills, and professional interests.
+- **Projects Page:** Dedicated presentation of selected projects with descriptions, technologies, live demonstrations, and source code links.
+- **Experience Page:** Professional experience and educational background.
+- **Contact Page:** Contact information and communication options.
+- **Resume Download:** Direct access to my professional CV.
+- **Reusable Components:** Modular and maintainable React components.
+- **Consistent Navigation:** Easy navigation between portfolio sections.
+
+## Technology Stack
+
+### Frontend
+
+- **[Next.js](https://nextjs.org/)** – React framework used to build the website with the App Router.
+- **JavaScript (ES6+)** – Used for application functionality and logic.
+- **CSS3 (Vanilla CSS)** – Used for custom styling, layouts, animations, and responsive design.
+
+## Project Structure
+
+```text
+biruk-abera-portfolio/
+│
+├── public/
+│   ├── projects/
+│   ├── screenshots/
+│   │   ├── home.png
+│   │   ├── about.png
+│   │   ├── projects.png
+│   │   ├── experience.png
+│   │   └── contact.png
+│   └── cv/
+│
+├── src/
+│   ├── app/
+│   │   ├── about/
+│   │   ├── contact/
+│   │   ├── experience/
+│   │   ├── projects/
+│   │   ├── api/
+│   │   │   └── contact/
+│   │   ├── globals.css
+│   │   ├── Homepage.css
+│   │   ├── layout.js
+│   │   ├── not-found.css
+│   │   ├── notfound.js
+│   │   └── page.js
+│   │
+│   ├── components/
+│   └── data/
+│
+├── .gitignore
+├── next.config.mjs
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to run the project locally.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- npm
+- Git
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git https://github.com/Biruk-ete/biruk-abera-portfolio
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd biruk-abera-portfolio
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Configure environment variables**
+
+If the application requires environment variables, create a `.env.local` file in the root directory and add the required configuration.
+
+Do not commit private credentials or environment files to GitHub.
+
+**5. Run the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**6. Open in your browser**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The application can be deployed using [Vercel](https://vercel.com/).
 
-To learn more about Next.js, take a look at the following resources:
+1. Push the project to a GitHub repository.
+2. Import the repository into Vercel.
+3. Configure the required environment variables.
+4. Deploy the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Home Page
 
-## Deploy on Vercel
+![Home Page](./public/screenshots/Home_page.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### About Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![About Page](./public/screenshots/About.png)
+
+### Projects Page
+
+![Projects Page](./public/screenshots/Projects.png)
+
+### Experience Page
+
+![Experience Page](./public/screenshots/Experience.png)
+
+### Contact Page
+
+![Contact Page](./public/screenshots/Contact.png)
+
+## Contact
+
+**Biruk Abera**
+
+Software Developer
+
+- **Email:** birukabelan6@gmail.com
+- **GitHub:** [@Biruk-ete](https://github.com/Biruk-ete)
+- **LinkedIn:** [Biruk Abera](https://www.linkedin.com/in/birukabera/)
+
+---
+
+Designed and developed by **Biruk Abera**.
