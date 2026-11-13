@@ -112,7 +112,7 @@ export default function Home() {
               </div>
 
               <a
-                href="/Biruk_Abera_CV.pdf"
+                href="/Biruk-Abera-CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="home-hero-resume-link"

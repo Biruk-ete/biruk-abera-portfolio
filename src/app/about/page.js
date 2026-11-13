@@ -195,7 +195,7 @@ export default function About() {
                             </Link>
 
                             <a
-                                href="/Biruk_Abera_CV.pdf"
+                                href="/Biruk-Abera-CV.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="about-btn-secondary"
